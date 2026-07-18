@@ -1,1 +1,0 @@
-# Plant_disease_detector
