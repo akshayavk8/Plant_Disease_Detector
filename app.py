@@ -16,7 +16,7 @@ st.set_page_config(page_title="Plant Disease Detector", page_icon="🌿", layout
 # ---------------------------
 @st.cache_resource
 def load_trained_model():
-    return load_model("effnet_transfer_plant_disease.h5")
+    return load_model("effnet_plant_disease.h5")
 
 @st.cache_resource
 def load_class_names():
