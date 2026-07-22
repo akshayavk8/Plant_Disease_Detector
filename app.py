@@ -29,6 +29,7 @@ def load_class_names():
 def get_hf_client():
     return InferenceClient(token=st.secrets["HF_TOKEN"], provider="hf-inference")
 
+
 model = load_trained_model()
 idx_to_class = load_class_names()
 client = get_hf_client()
@@ -66,7 +67,7 @@ Keep each section brief and practical."""
 
     try:
         response = client.chat.completions.create(
-            model="Qwen/Qwen2.5-7B-Instruct",
+            model="meta-llama/Llama-3.1-8B-Instruct",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=500,
         )
@@ -125,4 +126,4 @@ else:
     st.info("👆 Upload a leaf image to get started.")
 
 st.markdown("---")
-st.caption("Built with EfficientNetB0 (Transfer Learning) + Hugging Face Qwen2.5-7B-Instruct")
+st.caption("Built with EfficientNetB0 (Transfer Learning) + Hugging Face Llama-3.1-8B-Instruct")
