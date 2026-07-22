@@ -59,7 +59,7 @@ def get_treatment_recommendation(disease_name: str):
 Provide the following in a farmer-friendly way, using simple language:
 1. Disease Overview (1-2 sentences): 
 
-2. Symptoms: "\n"
+2. Symptoms: 
 
 3. Causes: 
 
