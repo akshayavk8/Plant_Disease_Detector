@@ -27,7 +27,7 @@ def load_class_names():
 
 @st.cache_resource
 def get_hf_client():
-    return InferenceClient(token=st.secrets["HF_TOKEN"], provider="auto")
+    return InferenceClient(token=st.secrets["HF_TOKEN"], provider="hf-inference")
 
 model = load_trained_model()
 idx_to_class = load_class_names()
