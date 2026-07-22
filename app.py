@@ -57,11 +57,15 @@ def get_treatment_recommendation(disease_name: str):
     prompt = f""" Disease: {clean_name}
 
 Provide the following in a farmer-friendly way, using simple language:
-1. Disease Overview (1-2 sentences): \n
-2. Symptoms: \n
-3. Causes: \n
-4. Recommended Treatment: \n
-5. Prevention Tips: \n
+1. Disease Overview (1-2 sentences): 
+
+2. Symptoms: "\n"
+
+3. Causes: 
+
+4. Recommended Treatment: 
+
+5. Prevention Tips: 
 
 Keep each section brief and practical."""
 
